@@ -1,0 +1,287 @@
+@font-face {
+    font-family: FONT1;
+    src: url(../fonts/font0.otf);
+}
+
+@font-face {
+    font-family: FONT2;
+    src: url(../fonts/font1.otf);
+}
+
+@font-face {
+    font-family: FONT3;
+    src: url(../fonts/font.ttf);
+}
+
+/* General css*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body{ font-family: ; font-size: ;} */
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --bg: #FCEDE9;
+    --darkorange: #DF4A28;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.clearflix {
+    display: block;
+    overflow: auto;
+    clear: both;
+}
+
+h1 {
+    font-size: 2.125rem;
+    text-align: center;
+}
+
+.v-line {
+    background-color: var(--darkorange);
+    width: 0.125rem;
+    height: 3.7rem;
+}
+
+/* -----------Header section------------- */
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--dark)
+}
+
+a:hover {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.btn-outline-custom {
+    color: var(--orange);
+    border-color: var(--orange);
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--orange);
+    color: Var(--white);
+}
+
+.btn-custom {
+    color: var(--white);
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.btn-custom:hover {
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.btn {
+    border-radius: .4rem;
+}
+
+.theme-color {
+    color: #DF4A28;
+}
+
+.theme-color:hover {
+    color: #DF4A28;
+}
+
+.sticky-top {
+    background-color: var(--white);
+}
+
+/* ----------------banner----------- */
+
+#h1 {
+    text-align: center;
+}
+
+#banner {
+    background-color: var(--bg);
+}
+
+.img-thumbnail {
+    background-color: transparent;
+    border-width: 0px;
+}
+
+#article {
+    background-color: var(--bg);
+}
+
+.fixed-top {
+    top: 80%;
+    left: 85%;
+}
+
+/* ----------------------------artical------------------------- */
+
+.background {
+    background-color: var(--white);
+}
+
+p {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.article {
+    background-color: (--white);
+}
+
+#img1 {
+    width: 34rem;
+}
+
+#start {
+    color: var(--orange);
+}
+
+/* ---------------------footer--------------- */
+
+.theme-color-1 {
+    color: var(--black);
+}
+
+/* ---------------------media query-------------------- */
+
+@media only screen and (max-width:578px) {
+    .v-line {
+        align-items: center;
+        display: block;
+        margin: auto;
+    }
+    .images img {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+    #btn {
+        display: block;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .background {
+        margin-top: 5%;
+        display: block;
+        width: auto;
+    }
+    .fixed-top {
+        top: 80%;
+        left: 75%;
+    }
+    .img {
+        margin-left: 40%;
+    }
+    .h5 {
+        text-align: center;
+    }
+    .paragraph {
+        text-align: center;
+    }
+    #img1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .fixed-top {
+        left: 65%;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .fixed-top {
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width:991px) and (min-width:578px) {
+    .lorem {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #img1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .fixed-top {
+        left: 70%;
+    }
+    .img {
+        margin-left: 10%;
+    }
+    .h5 {
+        text-align: center;
+    }
+    .paragraph {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:1203px) and (min-width:991px) {
+    .fixed-top {
+        left: 75%;
+    }
+}
